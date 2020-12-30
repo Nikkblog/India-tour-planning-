@@ -1,0 +1,103 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+header{
+    width: 100%; height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url(images/taj.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+nav{
+    width: 100%; height: 10vh;
+    background:rgba(0,0,0,0.2);
+    color: white;
+    display: flex; justify-content: space-between;
+    align-items: center;
+
+}
+nav .logo{
+    width: 25%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 200;
+}
+nav .menu{
+    width: 45%;
+    display: flex; justify-content: space-around;
+}
+nav .menu a{
+    width: 10%;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+}
+nav .menu a:first-child{
+    color: #00b894;
+}
+
+main{
+    width: 100%; height: 85vh;
+    display: flex; justify-content: center; align-items: center; text-align: center;
+    color: white;
+}
+section h3{
+    font-size: 30px;
+    font-weight: 300;
+    text-shadow: 2px 2px 5px black;
+}
+section h1{
+    margin: 1px auto 3px;
+    font-size: 30px; font-weight: 200;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px black;
+}
+section p{
+    font-size: 17px; font-weight: 100;
+    margin-bottom: 20px;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+section .btnone{
+    background: white;
+    color: black;
+}
+section .btntwo{
+    background: #00b894;
+    color: white;
+}
+.changetext:after{
+    content: '';
+    color: #00b894;
+    font-weight: 200;
+    animation: change_text 15s ease infinite;
+}
+@keyframes change_text{
+    0%{
+        content: "Darjeeling";
+    }
+    20%{
+        content: "Agra";
+    }
+    40%{
+        content: "Jaipur";
+    }
+    60%{
+        content: "Kerala";
+    }
+    80%{
+        content: "Goa";
+    }
+    100%{
+        content: "Oddisa";
+    }
+}
